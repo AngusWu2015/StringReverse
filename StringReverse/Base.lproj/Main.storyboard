@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345678" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQB-hm-Ahx">
+                                <rect key="frame" x="16" y="40" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyJ-b3-1a5">
+                                <rect key="frame" x="16" y="87" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErP-dV-FrH">
+                                <rect key="frame" x="16" y="119" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.38872540880000001" green="0.83893842360000004" blue="0.26425685249999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="反轉字串">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ReversePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGg-YL-h6j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VQB-hm-Ahx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0mi-xF-l8n"/>
+                            <constraint firstItem="ErP-dV-FrH" firstAttribute="leading" secondItem="hyJ-b3-1a5" secondAttribute="leading" id="HE6-hc-Nvv"/>
+                            <constraint firstItem="hyJ-b3-1a5" firstAttribute="top" secondItem="VQB-hm-Ahx" secondAttribute="bottom" constant="17" id="LaF-aN-ovq"/>
+                            <constraint firstItem="ErP-dV-FrH" firstAttribute="trailing" secondItem="hyJ-b3-1a5" secondAttribute="trailing" id="Sat-bW-fuQ"/>
+                            <constraint firstItem="ErP-dV-FrH" firstAttribute="top" secondItem="hyJ-b3-1a5" secondAttribute="bottom" constant="8" id="aJd-fX-Fb2"/>
+                            <constraint firstItem="VQB-hm-Ahx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c2r-9a-C4h"/>
+                            <constraint firstItem="hyJ-b3-1a5" firstAttribute="leading" secondItem="VQB-hm-Ahx" secondAttribute="leading" id="eHD-Et-ipH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VQB-hm-Ahx" secondAttribute="trailing" constant="16" id="r6J-8G-5Ac"/>
+                            <constraint firstItem="hyJ-b3-1a5" firstAttribute="trailing" secondItem="VQB-hm-Ahx" secondAttribute="trailing" id="ttF-bY-Q0J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="importText" destination="VQB-hm-Ahx" id="syj-1y-CwD"/>
+                        <outlet property="outPutLab" destination="hyJ-b3-1a5" id="Mn6-q4-MyC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
